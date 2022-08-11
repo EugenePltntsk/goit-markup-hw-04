@@ -16,6 +16,11 @@
     --white-text: #ffffff;
     --button-filters-bg: #F5F4FA;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --hero-background-color: #C4C4C4;
+
+
+
+
 }
 
 body {
@@ -215,7 +220,7 @@ img {
 /* Hero */
 
 .hero {
-    background-color: var(--secondary-bg-color);
+    /* background-color: var(--secondary-bg-color); */
     text-align: center;
     /* margin-bottom: 94px; */
     padding-top: 200px;
@@ -244,6 +249,16 @@ img {
 
 
    
+}
+
+.hero.hero-image {
+    background-color: var(--hero-background-color);
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/herojpeg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .title {
@@ -367,6 +382,30 @@ img {
     padding-bottom: 0;
 }
 
+
+.feature-list .item::before {
+    display: inline-flex;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    width: 270px;
+    height: 120px;
+    
+    background-color: var(--button-filters-bg);
+    background-image: url('../images/antenna\ 1.svg');
+    
+}
+
+
+
+
+
+
+
+
+
+
 /* Work List */
 
 .work-list li {
@@ -413,13 +452,15 @@ img {
     line-height: 1.18;
         
     letter-spacing: 0.03em;
+
+    margin-bottom: 16px;
 }
 
 .staff-list {
     display: flex;
 }
 
-.staff-list .item+ .item {
+.staff-list .item + .item {
     margin-left: 30px;
 }
 
@@ -442,7 +483,23 @@ img {
 
 }
 
+.social-links {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
 
+.social-links .social-item {
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    
+}
+
+.social-links .social-item + .social-item {
+    margin-left: 10px;
+}
 
 
 /* Footer */
