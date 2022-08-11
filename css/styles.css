@@ -17,7 +17,7 @@
     --button-filters-bg: #F5F4FA;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
     --hero-background-color: #C4C4C4;
-
+    --footer-social-bg: rgba(255, 255, 255, 0.1);
 
 
 
@@ -362,6 +362,10 @@ img {
     text-transform: uppercase;
 }
 
+
+
+
+
 .feature-list .text {
     
     font-size: 14px;
@@ -383,7 +387,7 @@ img {
 }
 
 
-.feature-list .item::before {
+.feature-list .item.attention::before {
     display: inline-flex;
     content: '';
     background-repeat: no-repeat;
@@ -393,11 +397,55 @@ img {
     height: 120px;
     
     background-color: var(--button-filters-bg);
-    background-image: url('../images/antenna\ 1.svg');
+    background-image: url('../images/antenna.svg');
     
 }
 
+.feature-list .item.punctuality::before {
+    display: inline-flex;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    width: 270px;
+    height: 120px;
 
+    background-color: var(--button-filters-bg);
+    background-image: url('../images/clock.svg');
+
+}
+
+.feature-list .item.planning::before {
+    display: inline-flex;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    width: 270px;
+    height: 120px;
+
+    background-color: var(--button-filters-bg);
+    background-image: url('../images/diagram.svg');
+
+}
+
+.feature-list .item.technologies::before {
+    display: inline-flex;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    width: 270px;
+    height: 120px;
+
+    background-color: var(--button-filters-bg);
+    background-image: url('../images/astronaut.svg');
+
+}
+
+.feature-list .title {
+    margin-top: 30px;
+}
 
 
 
@@ -497,12 +545,51 @@ img {
     
 }
 
+
+
 .social-links .social-item + .social-item {
     margin-left: 10px;
 }
 
 
 /* Footer */
+
+.link-footer-info {
+    padding-top: 12px;
+    margin-left: 70px;
+   
+    
+    
+}
+
+.join {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+}
+
+.social-links .footer-social-item {
+    width: 44px;
+    height: 44px;
+    background-color: var(--footer-social-bg);
+    border-radius: 50%;
+
+}
+
+.page-footer .footer-container {
+    display: flex;
+}
+
+
+.social-links .footer-social-item + .footer-social-item {
+    margin-left: 10px;
+}
+
 
 .footer-logo {
     display: inline-block;
